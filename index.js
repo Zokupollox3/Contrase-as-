@@ -8,8 +8,8 @@ function validarPassword(pass) {
 }
 
 // REGISTRO
-/** Para que el registro pueda hacerse bien se debe poner un correo con extencion gmail y @,
-para la contraseña deben ser 6 carácteres.**/
+/* Para que el registro pueda hacerse bien se debe poner un correo con extencion gmail y @,
+para la contraseña deben ser 6 carácteres.*/
 document.getElementById("formRegistro").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -32,8 +32,8 @@ document.getElementById("formRegistro").addEventListener("submit", function(e){
 });
 
 // INICIO DE SESIÓN 
-/** Para el inicio de sesion se debe repetir el correo y la contraseña con la que se accedió y si se falla 3 
-veces en cualquiera de los 2 se bloqueará por 30 segundos **/
+/* Para el inicio de sesion se debe repetir el correo y la contraseña con la que se accedió y si se falla 3 
+veces en cualquiera de los 2 se bloqueará por 30 segundos */
 let intentosFallidos = 0;
 let bloqueado = false;
 
@@ -76,7 +76,7 @@ document.getElementById("verPass").addEventListener("change", function(){
 });
 
 // RECUPERAR CONTRASEÑA 
-/** Para recuperar se debe poner el correo con el que te registraste**/
+/* Para recuperar se debe poner el correo con el que te registraste*/
 document.getElementById("formRecuperar").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -91,5 +91,6 @@ document.getElementById("formRecuperar").addEventListener("submit", function(e){
             "Este correo no está registrado.";
     }
 });
+
 
 
