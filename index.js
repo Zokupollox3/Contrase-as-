@@ -7,7 +7,7 @@ function validarPassword(pass) {
     return pass.length >= 6;
 }
 
-// ---------- REGISTRO ----------
+// REGISTRO
 document.getElementById("formRegistro").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -29,7 +29,7 @@ document.getElementById("formRegistro").addEventListener("submit", function(e){
     alert("Cuenta creada exitosamente");
 });
 
-// ---------- INICIO DE SESIÓN ----------
+// INICIO DE SESIÓN 
 let intentosFallidos = 0;
 let bloqueado = false;
 
@@ -65,13 +65,13 @@ document.getElementById("formLogin").addEventListener("submit", function(e){
     }
 });
 
-// ---------- MOSTRAR / OCULTAR CONTRASEÑA ----------
+//  MOSTRAR / OCULTAR CONTRASEÑA 
 document.getElementById("verPass").addEventListener("change", function(){
     let campo = document.getElementById("passLogin");
     campo.type = campo.type === "password" ? "text" : "password";
 });
 
-// ---------- RECUPERAR CONTRASEÑA ----------
+// RECUPERAR CONTRASEÑA 
 document.getElementById("formRecuperar").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -86,3 +86,4 @@ document.getElementById("formRecuperar").addEventListener("submit", function(e){
             "Este correo no está registrado.";
     }
 });
+
