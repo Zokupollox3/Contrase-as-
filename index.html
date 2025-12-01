@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Autenticación Básica</title>
+</head>
+<body>
+
+    <h2>Crear Cuenta</h2>
+    <form id="formRegistro">
+        <input type="email" id="emailRegistro" placeholder="Correo"><br>
+        <input type="password" id="passRegistro" placeholder="Contraseña"><br>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <hr>
+
+    <h2>Iniciar Sesión</h2>
+    <form id="formLogin">
+        <input type="email" id="emailLogin" placeholder="Correo"><br>
+        <input type="password" id="passLogin" placeholder="Contraseña"><br>
+        <input type="checkbox" id="verPass"> Mostrar Contraseña<br>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <p id="bloqueoMensaje"></p>
+
+    <hr>
+
+    <h2>Recuperar Contraseña</h2>
+    <form id="formRecuperar">
+        <input type="email" id="emailRecuperar" placeholder="Correo registrado"><br>
+        <button type="submit">Enviar recuperación</button>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <!-- Script separado -->
+    <script src="index.js"></script>
+
+</body>
+</html>
